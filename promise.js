@@ -20,3 +20,8 @@ const makeAllCaps = (array) => {
     }
   });
 }
+
+const sortWords = (array) => {
+	const newArr = [...array];
+  return newArr.sort();
+}
