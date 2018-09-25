@@ -21,7 +21,4 @@ const makeAllCaps = (array) => {
   });
 }
 
-const sortWords = (array) => {
-	const newArr = [...array];
-  return newArr.sort();
-}
+const sortWords = (array) => ( [...array].sort() );
