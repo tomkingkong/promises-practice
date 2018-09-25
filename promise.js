@@ -10,11 +10,11 @@ const testNum = (num) => {
 
 const makeAllCaps = (array) => {
   const isString = (value) => {
-    typeof value === 'string';
+    return typeof value === 'string';
   }
   return new Promise(function(resolve, reject) {
     if (array.every(isString)) {
-      resolve(array.toUpperCase());
+      resolve(array.map(w => w.toUpperCase()));
     } else {
       reject('No, the array you passed in contained an element that was not a string!');
     }
