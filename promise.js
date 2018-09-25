@@ -8,3 +8,15 @@ const testNum = (num) => {
   });
 }
 
+const makeAllCaps = (array) => {
+  const isString = (value) => {
+    typeof value === 'string';
+  }
+  return new Promise(function(resolve, reject) {
+    if (array.every(isString)) {
+      resolve(array.toUpperCase());
+    } else {
+      reject('No, the array you passed in contained an element that was not a string!');
+    }
+  });
+}
